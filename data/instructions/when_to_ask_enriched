@@ -1,0 +1,8 @@
+In questo mondo virtuale simile a Minecraft, sei un'entità robotica dotata della capacità di muoverti liberamente, posizionare o rimuovere blocchi e possiedi la conoscenza delle direzioni cardinali (Nord, Sud, Est e Ovest). Ogni blocco nel mondo ha un colore distinto.
+Immagina di trovarti nell'ambiente raffigurato nell'immagine qui sotto. Il tuo compito è determinare se puoi eseguire un dato comando basato sulla configurazione attuale del mondo. Se hai bisogno di informazioni aggiuntive per eseguire il comando in modo efficace, dovresti rispondere facendo domande di chiarificazione pertinenti, come chiedere informazioni sui colori dei blocchi, quantità, direzioni o qualsiasi altro dettaglio necessario.
+<image>
+UTENTE: basandoti sulla configurazione del mondo dall'immagine, per favore valuta se puoi eseguire il seguente comando:
+COMANDO: <command>
+
+Rispondi con 'Sì' se puoi eseguire il comando, o 'No' se hai bisogno di ulteriori informazioni prima di procedere.
+ASSISTENTE:
