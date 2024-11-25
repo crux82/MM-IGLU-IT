@@ -85,10 +85,10 @@ If you want more details, please consult the paper.
 |-----------------|-------------|----------------|-------------|-------------|---------------|---------------|
 | [LLaVALLaMA2Chat\-13b-EN](https://huggingface.co/sag-uniroma2/llava-Llama-2-chat-13b-hf-iglu-merged) |    Classification | EN  |    EN  | 96\.43%     | 67\.16%      | 81\.80%       |
 | [LLaVALLaMA2Chat\-13b-EN](https://huggingface.co/sag-uniroma2/llava-Llama-2-chat-13b-hf-iglu-merged) | Classification  | EN |  IT  | 70\.07%     | 24\.29%     | 47\.18%       |
-| [LLaVALLaMA2Chat\-13b-IT](https://huggingface.co/sag-uniroma2/llava-Llama-2-chat-13b-hf-iglu-merged-it) | Classification | IT |   IT  | 97\.81% | 66\.67% | 82\.24%   |
+| [LLaVALLaMA2Chat\-13b-IT](https://huggingface.co/sag-uniroma2/llava-Llama-2-chat-13b-hf-iglu-merged-IT) | Classification | IT |   IT  | 97\.81% | 66\.67% | 82\.24%   |
 | [LLaVALLaMA2Chat\-13b-EN](https://huggingface.co/sag-uniroma2/llava-Llama-2-chat-13b-hf-iglu-merged) | Generation | EN  |    EN  | 93\.95%     | 47\.89%      | 70\.92%       |
 | [LLaVALLaMA2Chat\-13b-EN](https://huggingface.co/sag-uniroma2/llava-Llama-2-chat-13b-hf-iglu-merged) | Generation  | EN |  IT  | 70\.01%     | 00\.00%     | 35\.00%       |
-| [LLaVALLaMA2Chat\-13b-IT](https://huggingface.co/sag-uniroma2/llava-Llama-2-chat-13b-hf-iglu-merged-it)| Generation | IT |   IT  | 93\.62% | 44\.16% | 68\.89%  |
+| [LLaVALLaMA2Chat\-13b-IT](https://huggingface.co/sag-uniroma2/llava-Llama-2-chat-13b-hf-iglu-merged-IT)| Generation | IT |   IT  | 93\.62% | 44\.16% | 68\.89%  |
 
 The models are trained following the multi-task adaptation schema. See the paper for more details.
 
