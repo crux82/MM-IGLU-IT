@@ -54,10 +54,10 @@ The table shows the number of examples available in each split (Train, Validatio
 
  Each row of the dataset is made of a unique ID, the path to the 3D image, the command, a flag to mark if the command is clear or ambiguous, the most relevant question or the answer "*I can execute it*" and, the path to the JSON file containing the information about the world. Here we show an example:
 
-| **ID**  | **World path**    | **Image path**    | **Command** | **Is command clear** | **Expected ouptut** |
+| **ID**  | **Image path**    | **Command** | **Is command clear** | **Expected ouptut** | **World Path**   |
 |-----------------|-------------|----------------|-------------|-------------|-------------|
-| CQ-game-3053  |    data/iwp/12-c139/step-4 | ./data/images/CQ-game-3053.png | Impila quattro blocchi rossi sopra il blocco.  |    Yes | Posso eseguirlo.   
-| CQ-game-4622 | data/iwp/13-c75/step-2  |   ./data/images/CQ-game-4622.png | Aggiungere 2 blocchi gialli nella parte inferiore della colonna per fissarlo al pavimento. Poi aggiungere una colonna in ogni spazio bianco sul pavimento diagonale alla colonna gialla (4 nuove colonne) |  No | Di che colore devono essere le colonne diagonali?     
+| CQ-game-3053  | ./data/images/CQ-game-3053.png | Impila quattro blocchi rossi sopra il blocco.  |    Yes | Posso eseguirlo. | data/iwp/12-c139/step-4 |   
+| CQ-game-4622 |  ./data/images/CQ-game-4622.png | Aggiungere 2 blocchi gialli nella parte inferiore della colonna per fissarlo al pavimento. Poi aggiungere una colonna in ogni spazio bianco sul pavimento diagonale alla colonna gialla (4 nuove colonne) |  No | Di che colore devono essere le colonne diagonali? |  data/iwp/13-c75/step-2  |   
 
 ---
 
@@ -83,12 +83,12 @@ If you want more details, please consult the paper.
 
 | **Model name**  | **Eval task**    | **Train lang** | **Test lang** | **F1 Pos**  | **F1 Neg**  | **Macro\-F1** |
 |-----------------|-------------|----------------|-------------|-------------|---------------|---------------|
-| LLaMA2Chat\-13b-EN      |    Classification | EN  |    EN  | 96\.43%     | **67\.16**%      | 81\.80%       |
-| LLaMA2Chat\-13b-EN | Classification  | EN |  IT  | 70\.07%     | 24\.29%     | 47\.18%       |
-| LLaMA2Chat\-13b-IT | Classification | IT |   IT  | **97\.81%** | 66\.67% | **82\.24%**   |
-| LLaMA2Chat\-13b-EN      |    Generation | EN  |    EN  | **93\.95**%     | **47\.89**%      | **70\.92**%       |
-| LLaMA2Chat\-13b-EN | Generation  | EN |  IT  | 70\.01%     | 00\.00%     | 35\.00%       |
-| LLaMA2Chat\-13b-IT | Generation | IT |   IT  | 93\.62% | 44\.16% | 68\.89%  |
+| [LLaVALLaMA2Chat\-13b-EN](https://huggingface.co/sag-uniroma2/llava-Llama-2-chat-13b-hf-iglu-merged) |    Classification | EN  |    EN  | 96\.43%     | 67\.16%      | 81\.80%       |
+| [LLaVALLaMA2Chat\-13b-EN](https://huggingface.co/sag-uniroma2/llava-Llama-2-chat-13b-hf-iglu-merged) | Classification  | EN |  IT  | 70\.07%     | 24\.29%     | 47\.18%       |
+| [LLaVALLaMA2Chat\-13b-IT](https://huggingface.co/sag-uniroma2/llava-Llama-2-chat-13b-hf-iglu-merged-it) | Classification | IT |   IT  | 97\.81% | 66\.67% | 82\.24%   |
+| [LLaVALLaMA2Chat\-13b-EN](https://huggingface.co/sag-uniroma2/llava-Llama-2-chat-13b-hf-iglu-merged) | Generation | EN  |    EN  | 93\.95%     | 47\.89%      | 70\.92%       |
+| [LLaVALLaMA2Chat\-13b-EN](https://huggingface.co/sag-uniroma2/llava-Llama-2-chat-13b-hf-iglu-merged) | Generation  | EN |  IT  | 70\.01%     | 00\.00%     | 35\.00%       |
+| [LLaVALLaMA2Chat\-13b-IT](https://huggingface.co/sag-uniroma2/llava-Llama-2-chat-13b-hf-iglu-merged-it)| Generation | IT |   IT  | 93\.62% | 44\.16% | 68\.89%  |
 
 The models are trained following the multi-task adaptation schema. See the paper for more details.
 
